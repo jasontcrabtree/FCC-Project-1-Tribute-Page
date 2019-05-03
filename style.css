@@ -1,0 +1,148 @@
+:root {
+	--layout-background-100: #f7ffff;
+	--text-brand-900: #33004b;
+	--text-default-900: #220931;
+	font-size: 16px;
+}
+
+html {
+	font-family: "Poppins", sans-serif;
+	background: var(--layout-background-100);
+	color: var(--text-brand-900);
+	border-top: 8px solid rgb(1, 12, 48);
+	line-height: 1.6;
+}
+
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+section {
+	margin: 48px 0;
+}
+
+h1 {
+	margin-top: 48px;
+	font-weight: 900;
+	font-size: calc(24px + (48 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+span {
+	color: rgb(64, 74, 83);
+}
+
+p,
+h2 {
+	color: var(--text-default-900);
+}
+
+p {
+	font-size: 18px;
+}
+
+img {
+	display: block;
+	width: 300px;
+	max-width: 100%;
+	margin: 0 0 0 auto;
+}
+
+img:hover {
+	transform: scale(1.15);
+	padding-bottom: 16px;
+}
+
+#title {
+	text-align: center;
+}
+
+#img-caption {
+	font-weight: 600;
+	color: rgb(64, 74, 83);
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgb(162, 92, 241);
+	text-align: center;
+}
+
+.block-description:nth-child(2) {
+	width: 40ch;
+	margin: 0 4px 0 calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.block-description:nth-child(1) {
+	width: 40ch;
+	margin: 0 4px 0 0;
+	margin-right: calc(8px + (32 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.block-description p {
+	margin-top: 0;
+}
+
+.div-img-wrapper {
+	display: flex;
+
+	width: fit-content;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+	.block-description:nth-child(2) {
+		width: 24ch;
+		margin-left: 0 0 0 4px;
+	}
+
+	.block-description:nth-child(1) {
+		width: 24ch;
+		margin: 0 4px 0 0;
+	}
+
+	main {
+		width: 90vw;
+		margin: 0 8px;
+	}
+
+	img {
+		width: 72px;
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+footer {
+	color: #131313;
+	margin-top: 72px;
+	margin-bottom: 40px;
+	width: 40ch;
+	max-width: fit-content;
+	margin: 80px auto 72px;
+	padding: 0 16px;
+	background: #f1f1fa;
+	border: #e5e5e5 1px solid;
+	border-top: 4px solid #f8cb47;
+	box-shadow: 0 12px 16px rgba(229, 229, 229, 0.9);
+	line-height: 1.7;
+}
+
+footer p {
+	font-size: 16px;
+}
+
+footer a {
+	color: #45498f;
+}
+
+footer a:hover {
+	border-bottom: 4px solid #f8cb47;
+	text-decoration: none;
+}
